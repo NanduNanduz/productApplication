@@ -19,7 +19,7 @@ const Productform = () => {
     axios
       .post("https://fakestoreapi.com/products", form)
       .then((res) => {
-        navigate("/home");
+        navigate("/");
       })
       .catch((error) => {
         alert("Invalid Login");
@@ -76,7 +76,7 @@ const Productform = () => {
             required
           ></TextField>
         </Grid>
-        <Button color="secondary" variant="contained" onClick={capValue}>
+        <Button style={{backgroundColor:'gray'}} variant="contained" onClick={capValue}>
           AddProduct
         </Button>{" "}
         <br />
